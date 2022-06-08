@@ -8,9 +8,9 @@
 # Step 1. Change these values to your liking.
 
 PLUGIN_NAME="$(basename $(dirname $(realpath $0)))"
-PLUGIN_TITLE='My ChRIS Plugin'
-SCRIPT_NAME='commandname'
-DESCRIPTION='A ChRIS plugin to do something awesome'
+PLUGIN_TITLE='Alignment to31'
+SCRIPT_NAME='align_to31'
+DESCRIPTION='Fetal brain MRI alignment'
 ORGANIZATION='FNNDSC'
 EMAIL='dev@babyMRI.org'
 
@@ -20,7 +20,7 @@ ENABLE_CI=yes
 
 # Step 2. Uncomment the line below.
 
-#READY=yes
+READY=yes
 
 # Step 3. Run: ./bootstrap.sh
 
