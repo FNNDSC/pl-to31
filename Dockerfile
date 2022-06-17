@@ -4,10 +4,10 @@
 FROM docker.io/python:3.10.4-slim-buster
 
 LABEL org.opencontainers.image.authors="FNNDSC <dev@babyMRI.org>" \
-      org.opencontainers.image.title="ChRIS Plugin Title" \
-      org.opencontainers.image.description="A ChRIS plugin that..."
+      org.opencontainers.image.title="Alignment to31" \
+      org.opencontainers.image.description="Fetal brain MRI alignment"
 
-WORKDIR /usr/local/src/app
+WORKDIR /usr/local/src/pl-to31
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 COPY . .
 RUN pip install .
 
-CMD ["commandname", "--help"]
+CMD ["align_to31", "--help"]
